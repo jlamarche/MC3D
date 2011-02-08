@@ -1,3 +1,32 @@
 MC3D (MartianCraft 3D) is a set of platform-agnostic C types and functions for use with creating 3D graphics using OpenGL and OpenGL ES. They have been used in production code on both iOS and Android applications and have been coded to need as little tweaking or modification. MC3D does not use any hardware-specific features, such as NEON, or ARM assembly, though on iOS, certain functions, such as matrix multiplication, will leverage the Accelerate framework, but there are also platform independent versions of these functions that function identically, just without the benefit of vector acceleration. 
 
 Documentation is sparse, and this library is very much a work in progress. Functions and types implementing higher-level objects, such as full 3D models, bones and skeletons for animation, and full scenes, are in progress, but not ready for release.
+
+//
+//       ^                     ____________________
+//      / \                   |                   |
+//     / _ \                  | MartianCraft 3D   |
+//    ( (_) )                 | Platform-Agnostic |
+//   /|  |  |\                | 3D Foundation     |
+//  //|__|__|\\               |___________________|
+// (/   (|)   \)
+//      \ /    
+//       v
+//
+//    Copyright 2011 Jeff LaMarche & MartianCraft. All rights reserved.
+//
+//    Redistribution and use in source and binary forms, with or without modification, are
+//    permitted provided that the following condition is met:
+//
+//    Redistributions of source code must retain the above copyright notice, this
+//    condition and the following disclaimer.
+//
+//    THIS SOFTWARE IS PROVIDED BY JEFF LAMARCHE & MARTIANCRAFT, LLC AS IS AND ANY EXPRESS OR 
+//    IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY 
+//    AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL JEFF LAMARCHE & 
+//    MARTIANCRAFT, LLC OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+//    EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE 
+//    GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED  
+//    AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+//    NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF
+//    ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
