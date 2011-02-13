@@ -65,7 +65,6 @@ typedef vec4* vec4Ptr;
 struct ivec2 {
   GLint x;
   GLint y;
-  GLint z;
 };
 typedef struct ivec2 ivec2;
 typedef struct ivec2* ivec2Ptr;
