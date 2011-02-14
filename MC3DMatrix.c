@@ -291,7 +291,7 @@ mat4 mat4CreateFrustum(GLfloat left, GLfloat right, GLfloat bottom, GLfloat top,
   ret.w.x = 0.f; 
   ret.w.y = 0.f; 
   ret.w.z = -2 * far * near / (far - near); 
-  ret.w.w = 1.f;
+  ret.w.w = 0.f;
 
   return ret;
 }
