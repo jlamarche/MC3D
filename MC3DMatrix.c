@@ -271,7 +271,7 @@ void mat4SubMatrx(mat4 mr, mat3 *mb, int i, int j) {
 }
 
 #pragma mark -
-#pragma mark Matrix Transpose
+#pragma mark Matrix Projections and Views
 
 mat4 mat4CreateFrustum(GLfloat left, GLfloat right, GLfloat bottom, GLfloat top, GLfloat near, GLfloat far) {    
   mat4 ret;
@@ -346,7 +346,7 @@ mat4 mat4LookAt(vec3 position, vec3 target, vec3 up) {
   position4.x = position.x;
   position4.y = position.y;
   position4.z = position.z;
-  position4.w = 0.f;
+  position4.w = 1.f;
   vec4 positionPrime = mat4MultiplyVec4(ret, position4);
   mat4Transpose(&ret);
   ret.w = positionPrime;
